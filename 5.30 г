@@ -1,0 +1,47 @@
+#include <iostream>
+
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+
+int i;
+
+int a;
+
+int b;
+
+int c = 0;
+
+cin >> a;
+
+cin >> b;
+
+if (b >= a)
+
+{
+
+for (i = a; i < b + 1; i++)
+
+{
+
+c += i * i;
+
+}
+
+cout << c;
+
+}
+
+else
+
+{
+
+cout << "Error";
+
+}
+
+}
