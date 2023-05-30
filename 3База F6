@@ -1,0 +1,21 @@
+#include <iostream> // подключаем библиотеку для работы с вводом/выводом
+
+int main() { // начало программы
+
+float price; // объявляем переменную для хранения цены на 1 кг конфет
+
+std::cout << "Enter the price per kilogram of candy: "; // выводим приглашение на ввод цены
+
+std::cin >> price; // считываем цену с клавиатуры
+
+for (float kilos = 1.2; kilos <= 2.0; kilos += 0.2) { // запускаем цикл от 1.2 до 2.0 с шагом 0.2
+
+float cost = kilos * price; // находим стоимость нужного количества конфет
+
+std::cout << "Cost of " << kilos << " kg of candy: " << cost << std::endl; // выводим результат
+
+}
+
+return 0; // завершаем программу
+
+}

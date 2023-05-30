@@ -1,0 +1,49 @@
+#include <iostream> // подключаем библиотеку для работы с вводом/выводом
+
+int main() { // начало программы
+
+int A, B; // объявляем переменные для хранения А и В
+
+std::cout << "Enter two integers A and B (A < B): "; // выводим приглашение на ввод А и В
+
+std::cin >> A >> B; // считываем числа с клавиатуры
+
+int sum = 0; // объявляем переменную для хранения суммы всех чисел от А до В
+
+for (int i = A; i <= B; i++) { // запускаем цикл от А до В включительно
+
+sum += i; // прибавляем текущее число к сумме
+
+}
+
+std::cout << "The sum of all integers from " << A << " to " << B << " is " << sum << std::endl; // выводим результат
+
+return 0; // завершаем программу
+
+}
+
+//самостоятельная базовая 3, №Ф8
+
+#include <iostream>
+
+int main() {
+
+int a, b;
+
+long long product = 1;
+
+std::cout << "Enter two integers (A < B): ";
+
+std::cin >> a >> b;
+
+for(int i = a; i <= b; i++) {
+
+product *= i;
+
+}
+
+std::cout << "Product of all integers from A to B inclusive is: " << product << std::endl;
+
+return 0;
+
+}
